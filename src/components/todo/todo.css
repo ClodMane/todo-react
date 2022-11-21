@@ -1,0 +1,18 @@
+.items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 1025px;
+}
+.item {
+  border: 1px solid #2447a7;
+  border-radius: 16px;
+  width: 500px;
+  padding: 20px;
+  background-color: #dfeefd;
+}
+.item:hover {
+  background-color: #cde2f7;
+  border: 1px solid #0f286d;
+}
