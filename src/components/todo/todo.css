@@ -2,17 +2,132 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
   max-width: 1025px;
 }
 .item {
   border: 1px solid #2447a7;
   border-radius: 16px;
   width: 500px;
+  height: auto;
+  min-height: 230px;
   padding: 20px;
   background-color: #dfeefd;
+}
+.item-close {
+  border: 1px solid #68728f;
+  border-radius: 16px;
+  width: 500px;
+  height: auto;
+  min-height: 230px;
+  padding: 20px;
+  background-color: #dbdbdb;
 }
 .item:hover {
   background-color: #cde2f7;
   border: 1px solid #0f286d;
+}
+.button {
+  width: 48px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-card-wrapper {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.float-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.head-card {
+  font-size: 18px;
+  font-weight: 700;
+}
+.head-card-close {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: #665d5d;
+}
+.body-card {
+  font-size: 14px;
+  font-weight: 400;
+}
+.body-card-close {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #665d5d;
+}
+.body-card-wrapper {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.date-wrapper {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.card-buttons-wrapper {
+  margin: 30px auto 0px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 7px;
+  flex-direction: row;
+}
+.date {
+  font-size: 18px;
+  font-weight: 700;
+}
+.date-close {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: #665d5d;
+}
+.input-file {
+  color: #fff;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 12px;
+  line-height: 150%;
+  transition: 0.3s transform;
+  border: none;
+  background-color: #2447a7;
+  cursor: pointer;
+  padding: 7px 15px;
+}
+.file-upload {
+  width: 210px;
+  display: flex;
+}
+#file-input {
+  display: none;
+}
+.file-upload label {
+  cursor: pointer;
+  width: 48px;
+  background: #2447a7;
+  border-radius: 16px;
+  padding: 10px 7px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.file-upload label:hover {
+  background: #1d3b8d;
+}
+#file-name {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #000;
 }

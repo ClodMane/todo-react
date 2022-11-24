@@ -2,23 +2,21 @@ import React from "react";
 import { useState } from "react";
 import "./addtodo.css";
 
-const AddTodo = ({ todo, setTodo }) => {
+const AddTodo = ({ todo, setTodo, createTask }) => {
   const [value, setValue] = useState("");
   const [valueDescription, setValueDescription] = useState("");
   const [valueDate, setDate] = useState("");
 
   function saveNewTodo() {
-    setTodo([
-      ...todo,
-      {
-        id: "id" + Math.random().toString(36).substring(2, 9),
-        title: value,
-        description: valueDescription,
-        status: true,
-        date: valueDate,
-      },
-    ]);
-    console.log(valueDescription);
+    let newTask = {
+      id: "id" + Math.random().toString(36).substring(2, 9),
+      title: value,
+      description: valueDescription,
+      status: true,
+      date: valueDate,
+    };
+    createTask(newTask);
+    setTodo([...todo, newTask]);
     setValue("");
     setValueDescription("");
     setDate("");
@@ -27,6 +25,7 @@ const AddTodo = ({ todo, setTodo }) => {
   return (
     <div className="input-wrapper">
       <input
+        name="title"
         className="input"
         placeholder="Введите задачу"
         value={value}

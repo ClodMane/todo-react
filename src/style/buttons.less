@@ -1,4 +1,6 @@
-button {
+.button {
+    width: 48px;
+    height: 39px;
     color: #fff;
     text-align: center;
     border-radius: 16px;
@@ -15,7 +17,23 @@ button {
 button:hover {
     background-color :#1d3b8d;
 }
+button:disabled {
+    background-color :#6c6e74;
+}
 
 button:active {
     background-color :#1F1368;
+}
+
+.button-create {
+    color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 150%;
+    transition: 0.3s transform;
+    border: none;
+    background-color: #2447a7;
+    cursor: pointer;
+    padding: 10px 50px;
 }
