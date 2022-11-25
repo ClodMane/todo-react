@@ -3,7 +3,7 @@ import AddTodo from "../addTodo/AddTodo";
 import Todo from "../todo/Todo";
 import { useState, useEffect } from "react";
 
-import { db } from "./Firebase.js";
+import { db } from "../firebase/Firebase.js";
 
 import { ref, set, onValue, remove, update } from "firebase/database";
 
